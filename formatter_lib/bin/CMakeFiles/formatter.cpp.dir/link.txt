@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/formatter.cpp.dir/code/formatter.cpp.o -o formatter.cpp 
