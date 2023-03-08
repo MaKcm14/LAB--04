@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/maksi/LAB03/lab03/formatter_ex_lib/code/formatter_ex.cpp" "CMakeFiles/formatter_ex.dir/code/formatter_ex.cpp.o" "gcc" "CMakeFiles/formatter_ex.dir/code/formatter_ex.cpp.o.d"
+  "/home/maksi/LAB03/lab03/hello_world/hello_world.cpp" "CMakeFiles/hello_world.dir/hello_world.cpp.o" "gcc" "CMakeFiles/hello_world.dir/hello_world.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/maksi/LAB03/lab03/formatter_ex_lib/bins/CMakeFiles/formatter_lib.dir/DependInfo.cmake"
+  "/home/maksi/LAB03/lab03/hello_world/bins/CMakeFiles/formatter_ex_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

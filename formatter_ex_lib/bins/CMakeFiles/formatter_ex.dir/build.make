@@ -92,6 +92,7 @@ formatter_ex_EXTERNAL_OBJECTS =
 
 formatter_ex: CMakeFiles/formatter_ex.dir/code/formatter_ex.cpp.o
 formatter_ex: CMakeFiles/formatter_ex.dir/build.make
+formatter_ex: libformatter_lib.a
 formatter_ex: CMakeFiles/formatter_ex.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/maksi/LAB03/lab03/formatter_ex_lib/bins/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable formatter_ex"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/formatter_ex.dir/link.txt --verbose=$(VERBOSE)
