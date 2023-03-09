@@ -2,10 +2,22 @@ cmake_minimum_required(VERSION 3.25.1 FATAL_ERROR)
 
 project(solver)
 
-add_library(formatter_ex_lib STATIC ../formatter_ex_lib/code/formatter_ex.cpp ../formatter_ex_lib/code/formatter_ex.h)
+add_library(formatter_lib STATIC ../formatter_lib/formatter.cpp)
 
-add_library(solver_lib STATIC ../solver_lib/code/solver.h ../solver_lib/code/solver.cpp)
+target_include_directories(formatter_lib PUBLIC ../formatter_lib)
 
-add_executable(solver ./equation.cpp)
+add_library(solver_lib STATIC ../solver_lib/solver.cpp)
 
-target_link_libraries(solver formatter_ex_lib solver_lib)
+target_include_directories(solver_lib PUBLIC ../solver_lib)
+
+add_library(formatter_ex_lib STATIC ../formatter_ex_lib/formatter_ex.cpp)
+
+target_include_directories(formatter_ex_lib PUBLIC ../formatter_ex_lib)
+
+add_executable(solver_app equation.cpp)
+
+target_link_libraries(formatter_ex_lib formatter_lib)
+
+target_link_libraries(solver_app formatter_ex_lib)
+
+target_link_libraries(solver_app solver_lib)

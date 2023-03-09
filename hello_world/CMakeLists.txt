@@ -2,8 +2,16 @@ cmake_minimum_required(VERSION 3.25.1 FATAL_ERROR)
 
 project(hello_world)
 
-add_library(formatter_ex_lib STATIC ../formatter_ex_lib/code/formatter_ex.cpp ../formatter_ex_lib/code/formatter_ex.h)
+add_library(formatter_lib STATIC ../formatter_lib/formatter.cpp)
 
-add_executable(hello_world ./hello_world.cpp)
+target_include_directories(formatter_lib PUBLIC ../formatter_lib)
+
+add_library(formatter_ex_lib STATIC ../formatter_ex_lib/formatter_ex.cpp)
+
+target_include_directories(formatter_ex_lib PUBLIC ../formatter_ex_lib)
+
+add_executable(hello_world hello_world.cpp)
+
+target_link_libraries(formatter_ex_lib formatter_lib)
 
 target_link_libraries(hello_world formatter_ex_lib)

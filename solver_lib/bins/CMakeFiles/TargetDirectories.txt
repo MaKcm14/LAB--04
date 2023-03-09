@@ -1,3 +1,0 @@
-/home/maksi/LAB03/lab03/solver_lib/bins/CMakeFiles/solver.cpp.dir
-/home/maksi/LAB03/lab03/solver_lib/bins/CMakeFiles/edit_cache.dir
-/home/maksi/LAB03/lab03/solver_lib/bins/CMakeFiles/rebuild_cache.dir
