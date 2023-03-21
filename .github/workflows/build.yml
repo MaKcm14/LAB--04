@@ -2,7 +2,7 @@ name: Test Build
 on: [push]
 jobs:
     Test_gcc:
-        runs-on: ubuntu-latest
+        runs-on: linux-latest
         steps:
         - name: Check out repository code
           uses: actions/checkout@v3
