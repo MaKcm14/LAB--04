@@ -9,7 +9,7 @@ jobs:
         - run: sudo apt update -y
         - run: sudo apt install -y cmake
         - run: cd solver && rm CMakeCache.txt && cmake . -B _build && cd _build && make
-        - run: cd hello_world && cmake . -B _build && cd _build && make
+        - run: cd hello_world && rm CMakeCache.txt && cmake . -B _build && cd _build && make
         - run: echo "This job's status is ${{ job.status }}."
 
     Test_clang:
